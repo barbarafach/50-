@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanz 50</title>
+    
+    <style>
+        /* CSS Reset und Grundschrift (übernommen von Index) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+            /* Farbverlauf: Blau-Türkis-Weißtöne (übernommen von Index) */
+            background: linear-gradient(135deg, #e0f7fa 0%, #80deea 50%, #26c6da 100%);
+        }
+
+        /* Container, um den Inhalt zu zentrieren und zu rahmen */
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.9); /* Weißer, leicht transparenter Hintergrund */
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #00796b; 
+            margin-bottom: 0.5em;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #00bcd4;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        /* Styling für das neue Bild */
+        .page-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Styling für den externen Link */
+        .link-highlight {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #00bcd4; /* Türkis-Hintergrund */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .link-highlight:hover {
+            background-color: #0097a7;
+        }
+        
+        /* Link zurück zur Startseite */
+        .back-link {
+            display: block;
+            margin-top: 30px;
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    </head>
+<body>
+    <div class="content-box">
+        <h1>Let’s Dance</h1> <h2>Discofox-Workshop</h2> <img src="Tanz1.png" alt="Tanzbild" class="page-image"> <p>Ein toller Workshop in der:</p>
+        
+        <p><strong>Tanzschule am Wall</strong></p> <a href="https://tanzschule-am-wall.de/discofox/" target="_blank" class="link-highlight">
+            Mehr Details zum Discofox-Angebot ansehen 🔗 
+        </a> <p style="margin-top: 40px; font-size: 1.5em; color: #00796b;">
+            Party im Anschluss! 🎉 </p>
+        
+        <a href="index.html" class="back-link">
+            &larr; Zurück zur Übersicht
+        </a>
+        
+    </div>
+</body>
+</html>

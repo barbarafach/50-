@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - Happy Birthday!</title>
+    
+    <style>
+        /* CSS Reset und Grundschrift */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderne, klare Schrift */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Dunkler Text */
+            min-height: 100vh;
+            display: flex; /* Für zentrierten Inhalt */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            /* Farbverlauf: Blau-Türkis-Weißtöne */
+            background: linear-gradient(135deg, #e0f7fa 0%, #80deea 50%, #26c6da 100%);
+        }
+
+        /* Überschrift und Textstyling */
+        h1 {
+            font-size: 3em;
+            color: #00796b; /* Dunkles Türkis */
+            margin-bottom: 0.1em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            color: #00bcd4; /* Helles Türkis */
+            margin-top: 0;
+        }
+
+        /* Container für die Icons */
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* Abstand zwischen den Icons */
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        /* Styling der anklickbaren Bilder (Icons) */
+        .icon-link img {
+            width: 150px; /* Einheitliche Größe für die Icons */
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; /* Rundes Design */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Schöner Schatten */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Hover-Effekt (Cool!) */
+        .icon-link img:hover {
+            transform: scale(1.1); /* Beim Mouseover etwas vergrößern */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border: 4px solid #fff; /* Weiße Umrandung */
+        }
+
+        /* Responsive Anpassung für kleinere Bildschirme (Handys) */
+        @media (max-width: 768px) {
+            .icon-container {
+                flex-direction: column; /* Icons untereinander anordnen */
+                gap: 20px;
+            }
+            .icon-link img {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    </head>
+<body>
+    
+    <h1>16. Dezember 1975</h1> <h2>Happy Birthday!!!</h2> <div class="icon-container">
+        
+        <a href="tanz.html" class="icon-link">
+            <img src="Geschenk1.jpg" alt="Geschenk 1 Icon">
+        </a>
+
+        <a href="leipzig.html" class="icon-link">
+            <img src="Geshenk 2.jpg" alt="Geschenk 2 Icon">
+        </a>
+        
+        <a href="ueberraschung.html" class="icon-link">
+            <img src="Geschenk 3.jpg" alt="Geschenk 3 Icon">
+        </a>
+        
+    </div>
+
+</body>
+</html>

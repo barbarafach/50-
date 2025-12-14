@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leipzig 50</title>
+    
+    <style>
+        /* Allgemeine Styling-Regeln (übernommen von den anderen Seiten) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #e0f7fa 0%, #80deea 50%, #26c6da 100%);
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            width: 100%;
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #00796b; 
+            margin-bottom: 0.2em;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #00bcd4;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        /* Styling für die Abschnitte mit Bild und Text (Flexbox) */
+        .section {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+
+        /* Bild-Container für einheitliche Darstellung */
+        .image-container {
+            flex-shrink: 0;
+            width: 250px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        /* Bilder füllen den Container */
+        .image-link img, .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Textbereich */
+        .text-content {
+            flex-grow: 1;
+        }
+        
+        /* Hover-Effekt für anklickbare Bilder */
+        a.image-link:hover .image-container {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Link zurück zur Startseite */
+        .back-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Anpassung */
+        @media (max-width: 768px) {
+            .content-box {
+                padding: 20px;
+            }
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .image-container {
+                width: 100%;
+                height: 200px;
+            }
+        }
+        
+        .main-icon {
+            width: 50px; 
+            height: 50px; 
+            display: block; 
+            margin: 0 auto 20px; 
+        }
+
+    </style>
+    </head>
+<body>
+    <div class="content-box">
+        <h1>Ein Wochenende in LEIPZIG 2-6 Personen &</h1> <img src="pfote.png" alt="Pfoten-Icon" class="main-icon"> <h2>Mit dabei könnten sein:</h2> <p>Ein Blick auf google Maps 👀: 
+            <a href="https://www.google.com/maps/place/Connewitz,+Leipzig-S%C3%BCd/@51.3207002,12.3730433,13z/data=!4m6!3m5!1s0x47a6f9dd809ede3d:0x4057685074ce2955!8m2!3d51.3078032!4d12.375401!16s%2Fg%2F122xf1pn?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #00bcd4; font-weight: bold;">
+                Zum Kartenausschnitt
+            </a> 
+        </p>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+
+        <div class="section">
+            <a href="https://de.wikipedia.org/wiki/Gewandhaus_(Leipzig)" target="_blank" class="image-link">
+                <div class="image-container">
+                    <img src="Gewandhaus.jpg" alt="Gewandhaus Leipzig">
+                </div>
+            </a>
+            <div class="text-content">
+                <h3>City -Bummel zum Gewandhaus</h3>
+                <p>Das Gewandhaus am Augustusplatz ist ein architektonischer Höhepunkt in Leipzig. </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-content">
+                <h3>Völkerschlachtdenkmal bei Leipzig</h3> 
+                <p>Ein imposantes Denkmal mit Aussichtsplattform. Ein Muss für jeden Besuch.</p>
+            </div>
+            <a href="https://www.stiftung-voelkerschlachtdenkmal-leipzig.de/" target="_blank" class="image-link">
+                <div class="image-container">
+                    <img src="voelkerschlachtdenkmal.jpg" alt="Völkerschlachtdenkmal">
+                </div>
+            </a>
+        </div>
+        
+        <div class="section">
+            <a href="https://www.leipzig.de/leben-in-leipzig/natur-und-umwelt/parks-waelder-und-friedhoefe/parks-und-gruenanlagen/clara-zetkin-park/karte-und-nutzungszonen" target="_blank" class="image-link">
+                <div class="image-container">
+                    <img src="Clara-Zetkin.jpg" alt="Clara-Zetkin-Park">
+                </div>
+            </a>
+            <div class="text-content">
+                <h3>Durch Leipzigs grüne Lunge</h3> 
+                <p>Johanna Park - Clara Zetkin Park - Wildpark. Perfekt zum Spazieren und Entspannen.</p>
+            </div>
+        </div>
+        
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+
+        <div class="section">
+            <div class="text-content">
+                <h3>FOTOMUSEUM</h3>
+                <p>(einzige hundefreundliche Museum 😊 )</p>
+                <p>
+                    <a href="https://www.urlaubstipps-mit-hund.de/mit-hund-im-deutschen-fotomuseum-agra-park-bei-leipzig/" target="_blank" style="color: #00796b; font-weight: bold;">
+                        Infos zum Fotomuseum (mit Hund)
+                    </a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="section" style="flex-direction: row-reverse; text-align: right;">
+    <a href="https://abgeleint.wordpress.com/wp-content/uploads/2010/09/flyer-bars-und-cafes2.pdf" target="_blank" class="image-link">
+        <img src="icon-2073973_1280.png" alt="Kulinarisches Icon" style="max-width: 100px; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    </a>
+    <div class="text-content">
+        <h3>KULINARISCHES SOLL AUCH NICHT ZU KURZ KOMMEN</h3>
+        <p>Eine Liste von Bars und Cafés .</p>
+        <p>
+            <a href="https://abgeleint.wordpress.com/wp-content/uploads/2010/09/flyer-bars-und-cafes2.pdf" target="_blank" style="color: #00796b; font-weight: bold;">
+                
+            </a>
+        </p>
+    </div>
+</div>
+
+        <a href="index.html" class="back-link">
+            ← Zurück zur Übersicht
+        </a>
+        
+    </div>
+</body>
+</html>
